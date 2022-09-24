@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --winBackground: turquoise;
+    --loseBackground: red;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.instructionsLine {
+    text-align: center;
+}
+
+.secretNumberContainer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.secretNumber {
+    height: fit-content;
+    width: fit-content;
+    border: 2px turquoise dotted;
+    text-align: center;
+    border-radius: 50%;
+    padding: 3vh;
+    
+}
+
+.resultsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.results {
+    max-width: 70vw;
+    text-align: center;
+}
+
+.playArea {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.numBox {
+    min-height: 50px;
+    min-width: 50px;
+    margin: 2vh;
+    border: 1px blue solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.numBox:hover {
+    cursor: pointer;
+    background-color: turquoise;
+}
+
+.playAgainContainer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.playAgain {
+    padding: 5vh;
+    border-radius: 2vh;
+}
+
+.playAgain:hover {
+    cursor: pointer;
+}
